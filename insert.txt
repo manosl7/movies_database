@@ -1,0 +1,126 @@
+insert into award (award_name, award_year) values ('best actor', 2009);
+insert into award (award_name, award_year) values ('best actor', 1996);
+insert into award (award_name, award_year) values ('best movie', 1998);
+insert into award (award_name, award_year) values ('best movie', 1997);
+insert into award (award_name, award_year) values ('best movie', 2010);
+insert into award (award_name, award_year) values ('best director', 1997);
+insert into award (award_name, award_year) values ('best director', 2000);
+insert into award (award_name, award_year) values ('best director', 1989);
+insert into award (award_name, award_year) values ('best director', 2012);
+insert into award (award_name, award_year) values ('best director', 1988);
+insert into award (award_name, award_year) values ('best first appearance', 2007);
+
+
+
+insert into movie (id_movie, title, movie_year, rating, abstract, series, run_time) values (1, '47 Ronin', 1997, 7.5, 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', false, 186);
+insert into movie (id_movie, title, movie_year, rating, abstract, series, run_time) values (2, '14 Blades (Jin yi wei)', 2010, 0.3, 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', true, 70);
+insert into movie (id_movie, title, movie_year, rating, abstract, series, run_time) values (3, 'Dinosaur', 2000, 7.8, 'Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', false, 79);
+insert into movie (id_movie, title, movie_year, rating, abstract, series, run_time) values (4, 'Bogowie', 1989, 9.3, 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', false, 153);
+insert into movie (id_movie, title, movie_year, rating, abstract, series, run_time) values (5, 'Brothers in Trouble', 1998, 0.4, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', true, 155);
+insert into movie (id_movie, title, movie_year, rating, abstract, series, run_time) values (6, 'Stick', 2010, 2.3, 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', false, 80);
+insert into movie (id_movie, title, movie_year, rating, abstract, series, run_time) values (7, 'Another Cinderella Story', 2010, 6.6, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', false, 59);
+insert into movie (id_movie, title, movie_year, rating, abstract, series, run_time) values (8, 'Black Sheep', 2012, 1.0, 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', true, 72);
+insert into movie (id_movie, title, movie_year, rating, abstract, series, run_time) values (9, 'Shadowlands', 2009, 5.6, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.', false, 167);
+insert into movie (id_movie, title, movie_year, rating, abstract, series, run_time) values (10, 'Louis Theroux: Law & Disorder', 1996, 9.0, 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', true, 189);
+insert into movie (id_movie, title, movie_year, rating, abstract, series, run_time) values (11, 'Next Three Days, The', 1988, 6.9, 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', false, 203);
+insert into movie (id_movie, title, movie_year, rating, abstract, series, run_time) values (12, 'River, The (Joki)', 2009, 2.4, 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', false, 219);
+
+
+insert into movie_wins_award (id_movie, award_name, award_year) values (1, 'best movie', 1997);
+insert into movie_wins_award (id_movie, award_name, award_year) values (5, 'best movie', 1998);
+insert into movie_wins_award (id_movie, award_name, award_year) values (7, 'best movie', 2010);
+
+
+insert into actor (id_actor, actor_first_name, actor_last_name, birth_date) values (1, 'Amalia', 'Marritt', '7/7/1983');
+insert into actor (id_actor, actor_first_name, actor_last_name, birth_date) values (2, 'Therese', 'Bryson', '12/9/1996');
+insert into actor (id_actor, actor_first_name, actor_last_name, birth_date) values (3, 'Debee', 'Oliveto', '12/2/1996');
+insert into actor (id_actor, actor_first_name, actor_last_name, birth_date) values (4, 'Gabriello', 'Greson', '4/10/1973');
+insert into actor (id_actor, actor_first_name, actor_last_name, birth_date) values (5, 'Benny', 'Strutley', '7/27/2011');
+insert into actor (id_actor, actor_first_name, actor_last_name, birth_date) values (6, 'Ola', 'Askem', '10/6/2000');
+insert into actor (id_actor, actor_first_name, actor_last_name, birth_date) values (7, 'Jacintha', 'Truss', '10/23/1975');
+insert into actor (id_actor, actor_first_name, actor_last_name, birth_date) values (8, 'Victoir', 'Martell', '9/11/2008');
+insert into actor (id_actor, actor_first_name, actor_last_name, birth_date) values (9, 'Neel', 'Folder', '9/16/1998');
+insert into actor (id_actor, actor_first_name, actor_last_name, birth_date) values (10, 'Ermina', 'Norssister', '4/16/1968');
+insert into actor (id_actor, actor_first_name, actor_last_name, birth_date) values (11, 'Roseanna', 'Breming', '12/26/1960');
+insert into actor (id_actor, actor_first_name, actor_last_name, birth_date) values (12, 'Dyane', 'Kempster', '3/21/1988');
+
+
+insert into actor_takes_award (id_actor, award_name, award_year) values (9, 'best actor', 2009);
+insert into actor_takes_award (id_actor, award_name, award_year) values (10, 'best actor', 1996);
+
+insert into genre (id_genre, genre_name) values (1, 'Mystery');
+insert into genre (id_genre, genre_name) values (2, 'Drama|Musical');
+insert into genre (id_genre, genre_name) values (3, 'Comedy');
+insert into genre (id_genre, genre_name) values (4, 'Comedy');
+insert into genre (id_genre, genre_name) values (5, 'Action|Adventure|Fantasy|Sci-Fi');
+insert into genre (id_genre, genre_name) values (6, 'Comedy|Mystery|Romance|Thriller');
+insert into genre (id_genre, genre_name) values (7, 'Comedy|Drama');
+insert into genre (id_genre, genre_name) values (8, 'Sci-Fi');
+insert into genre (id_genre, genre_name) values (9, 'Drama');
+insert into genre (id_genre, genre_name) values (10, 'Crime|Drama|Film-Noir|Thriller');
+insert into genre (id_genre, genre_name) values (11, 'Mystery|Thriller');
+insert into genre (id_genre, genre_name) values (12, 'Drama');
+
+
+insert into director (id_director, director_first_name, director_last_name, birth_date) values (1, 'Moise', 'Simonin', '1/31/1974');
+insert into director (id_director, director_first_name, director_last_name, birth_date) values (2, 'Batsheva', 'Spinige', '1/11/1947');
+insert into director (id_director, director_first_name, director_last_name, birth_date) values (3, 'Lenard', 'Albrecht', '11/3/1979');
+insert into director (id_director, director_first_name, director_last_name, birth_date) values (4, 'Maria', 'Pitherick', '6/24/1990');
+insert into director (id_director, director_first_name, director_last_name, birth_date) values (5, 'Silvain', 'Adney', '5/19/1982');
+insert into director (id_director, director_first_name, director_last_name, birth_date) values (6, 'Lenna', 'Hayfield', '4/29/1986');
+insert into director (id_director, director_first_name, director_last_name, birth_date) values (7, 'Brendin', 'Carvill', '10/31/1983');
+insert into director (id_director, director_first_name, director_last_name, birth_date) values (8, 'Kiel', 'Harlin', '12/23/1954');
+insert into director (id_director, director_first_name, director_last_name, birth_date) values (9, 'Lincoln', 'Hingeley', '1/31/1953');
+insert into director (id_director, director_first_name, director_last_name, birth_date) values (10, 'Stewart', 'Fyall', '7/18/1964');
+insert into director (id_director, director_first_name, director_last_name, birth_date) values (11, 'Shellysheldon', 'Jelks', '9/12/1952');
+insert into director (id_director, director_first_name, director_last_name, birth_date) values (12, 'Gipsy', 'covino', '4/15/1986');
+
+
+
+insert into movie_belongsTo_genre (id_movie, id_genre) values (1, 1);
+insert into movie_belongsTo_genre (id_movie, id_genre) values (2, 2);
+insert into movie_belongsTo_genre (id_movie, id_genre) values (3, 3);
+insert into movie_belongsTo_genre (id_movie, id_genre) values (4, 4);
+insert into movie_belongsTo_genre (id_movie, id_genre) values (5, 5);
+insert into movie_belongsTo_genre (id_movie, id_genre) values (6, 6);
+insert into movie_belongsTo_genre (id_movie, id_genre) values (7, 7);
+insert into movie_belongsTo_genre (id_movie, id_genre) values (8, 8);
+insert into movie_belongsTo_genre (id_movie, id_genre) values (9, 9);
+insert into movie_belongsTo_genre (id_movie, id_genre) values (10, 10);
+insert into movie_belongsTo_genre (id_movie, id_genre) values (11, 11);
+insert into movie_belongsTo_genre (id_movie, id_genre) values (12, 12);
+
+
+insert into director_directs_movie (id_movie, id_director) values (1, 1);
+insert into director_directs_movie (id_movie, id_director) values (2, 2);
+insert into director_directs_movie (id_movie, id_director) values (3, 3);
+insert into director_directs_movie (id_movie, id_director) values (4, 4);
+insert into director_directs_movie (id_movie, id_director) values (5, 5);
+insert into director_directs_movie (id_movie, id_director) values (6, 6);
+insert into director_directs_movie (id_movie, id_director) values (7, 7);
+insert into director_directs_movie (id_movie, id_director) values (8, 8);
+insert into director_directs_movie (id_movie, id_director) values (9, 9);
+insert into director_directs_movie (id_movie, id_director) values (10, 10);
+insert into director_directs_movie (id_movie, id_director) values (11, 11);
+insert into director_directs_movie (id_movie, id_director) values (12, 12);
+
+
+insert into actor_playsIn_movie (id_actor, id_movie) values (1, 1);
+insert into actor_playsIn_movie (id_actor, id_movie) values (2, 2);
+insert into actor_playsIn_movie (id_actor, id_movie) values (3, 3);
+insert into actor_playsIn_movie (id_actor, id_movie) values (4, 4);
+insert into actor_playsIn_movie (id_actor, id_movie) values (5, 5);
+insert into actor_playsIn_movie (id_actor, id_movie) values (6, 6);
+insert into actor_playsIn_movie (id_actor, id_movie) values (7, 7);
+insert into actor_playsIn_movie (id_actor, id_movie) values (8, 8);
+insert into actor_playsIn_movie (id_actor, id_movie) values (9, 9);
+insert into actor_playsIn_movie (id_actor, id_movie) values (10, 10);
+insert into actor_playsIn_movie (id_actor, id_movie) values (11, 11);
+insert into actor_playsIn_movie (id_actor, id_movie) values (12, 12);
+
+
+insert into director_has_award (id_director, award_name, award_year) values (1, 'best director', 1997);
+insert into director_has_award (id_director, award_name, award_year) values (3, 'best director', 2000);
+insert into director_has_award (id_director, award_name, award_year) values (4, 'best director', 1989);
+insert into director_has_award (id_director, award_name, award_year) values (8, 'best director', 2012);
+insert into director_has_award (id_director, award_name, award_year) values (11, 'best director', 1988);

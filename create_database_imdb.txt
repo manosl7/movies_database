@@ -1,0 +1,101 @@
+create database imdb;
+
+create table award 
+	(award_name varchar(45) not null,
+	 award_year numeric(4,0) not null,
+	 primary key (award_name,award_year)
+	);
+
+create table movie
+	(id_movie int not null,
+	 title	varchar(50) not null,
+	 movie_year numeric(4,0),
+	 rating numeric(2,1) check (rating >= 0 and rating <= 10),
+	 abstract text,
+	 series boolean,
+	 run_time int,
+	 primary key (id_movie) 
+	);
+
+
+
+create table movie_wins_award
+	(id_movie int not null,
+	 award_name varchar(45) not null,
+	 award_year numeric(4,0) not null,
+	 primary key (id_movie, award_name, award_year),
+	 foreign key (id_movie) references movie,
+	 foreign key (award_name,award_year) references award
+	);
+
+create table actor
+	(id_actor int not null,
+	 actor_first_name varchar(45) not null,
+	 actor_last_name varchar(45) not null,
+	 birth_date date,
+	 primary key (id_actor)
+	);
+
+create table actor_takes_award
+	(id_actor int not null,
+	 award_name varchar(45) not null,
+	 award_year numeric(4,0) not null,
+	 primary key (id_actor, award_name, award_year),
+	 foreign key (id_actor) references actor,
+	 foreign key (award_name,award_year) references award
+	);
+
+
+	
+create table genre
+	(id_genre int not null,
+	 genre_name varchar(50) not null,
+	 primary key (id_genre)
+	);
+	
+create table director
+	(id_director int not null,
+	 director_first_name varchar(45) not null,
+	 director_last_name varchar(45) not null,
+	 birth_date date,
+	 primary key (id_director)
+	);
+	
+
+
+
+create table movie_belongsTo_genre
+	(id_movie int not null,
+	 id_genre int not null,
+	 primary key(id_movie,id_genre),
+	 foreign key (id_movie) references movie,
+	 foreign key (id_genre) references genre
+	);
+
+create table director_directs_movie
+	(id_movie int not null,
+	 id_director int not null,
+	 primary key (id_movie,id_director),
+	 foreign key (id_movie) references movie,
+	 foreign key (id_director) references director
+	);
+	
+create table actor_playsIn_movie
+	(id_actor int not null,
+	 id_movie int not null,
+	 primary key (id_actor,id_movie),
+	 foreign key (id_actor) references actor,
+	 foreign key (id_movie) references movie
+	);
+
+create table director_has_award
+	(id_director int not null,
+	 award_name varchar(45) not null,
+	 award_year numeric(4,0) not null,
+	 primary key (id_director,award_name,award_year),
+	 foreign key (id_director) references director,
+	 foreign key (award_name,award_year) references award
+	);
+
+
+	
